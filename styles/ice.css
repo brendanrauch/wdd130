@@ -1,0 +1,32 @@
+body {
+    background-color: pink;
+    color: white;
+}
+img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+
+}
+
+#container {
+    text-align: center;
+}
+
+#numbers {
+    display: inline-block;
+    text-align: left;
+    color: black;
+}
+.bottom {
+    text-align: center;
+    font-size: .8em;
+    color: black;
+}
+#para {
+    font-size: 1.8rem;
+}
+
+#hover:hover {
+    color: black;
+}
