@@ -30,12 +30,12 @@ body {
 }
 
 header {
-    background-color: #8fa253;
+    background-color: #d9a859;
 }
 
 nav a:hover {
-    background-color: #d9a859;
-    color: black;
+    background-color: #bc6c25;
+    color: white;
     text-decoration: none;
 }
 
@@ -50,12 +50,12 @@ nav a:hover {
 }
 
 .msg {
-    background-color: #d9a859;
+    background-color: #bc6c25;
 }
 
 footer {
-    background-color: #bc6c25;
-    color: #d9a859;
+    background-color: #d9a859;
+    color: #49632C;
 }
 
 footer a {
