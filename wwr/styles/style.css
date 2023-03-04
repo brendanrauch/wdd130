@@ -86,7 +86,7 @@ footer {
     background-color: #d9a859;
     color: #49632C;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -235,6 +235,59 @@ nav {
     opacity: .6;
     transform: scale(1.1);
 }
+
+
+
+
+
+
+.river-grid h1 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    
+}
+
+.river-grid p {
+    padding-bottom: 2.75rem;
+    text-align: center;
+}
+
+.river-grid div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#river2 img {
+    float: right;
+}
+
+.threerivers-img {
+    float: left;
+    width: 40%;
+    margin: 1rem;
+    margin-bottom: .5rem;
+    border: 10px solid #d9a859;
+}
+
+.river-content {
+    display: flex;
+    align-items: center;
+}
+
+.river-idaho h2 {
+    padding-top: .5rem;
+}
+
+.river-idaho p {
+   padding: 1rem;
+   text-align: left;
+}
+
+#river2 {
+    padding-bottom: 2rem;
+}
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
