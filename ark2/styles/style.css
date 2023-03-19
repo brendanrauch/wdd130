@@ -7,6 +7,7 @@ img {
 .logo {
     max-width: 7rem;
     padding: .5rem;
+    
 }
 footer a {
     color: #000;
@@ -20,12 +21,16 @@ footer p {
 nav {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 nav a {
     text-align: center;
-    color: black;
+    color: #091520;
     text-decoration: none;
     padding: 35px;
+    width: 25%;
+    font-size: 2rem;
+   
 }
 body {
     background-color: #404444;
