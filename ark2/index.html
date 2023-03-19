@@ -21,35 +21,112 @@
             </nav>
         </header>
         
-        <main class="">
-            <h2>SURVIVE THE PAST TAME THE FUTURE</h2>
+        <main class="home-grid">
+            <h1>SURVIVE THE PAST TAME THE FUTURE</h1>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="images/hero2.jpg" style="width:100%" alt="Rex with Saddle">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="images/world.webp" style="width:100%" alt="World view">
+                </div>
+              
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="images/dino1.jpg" style="width:100%" alt="Raptors">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="images/dino2.jpg" style="width:100%" alt="Dodo">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="images/slide-words.png" style="width:100%" alt="Text">
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
             <div id="slide-show"> 
-                <img class="slide-show-img" src="images/hero2.jpg" alt="Rex with Saddle">
-                <img class="slide-show-img" src="images/dino1.jpg" alt="Raptors">
-                <img class="slide-show-img" src="images/dino2.jpg" alt="Dodo">
-                <p>Suddenly awakened on a strange primal world filled with dinosaurs and humans struggling for dominance; you must piece together the history of how you arrived there, team-up with legendary heroes, and confront powerful dark forces seeking to control the fate of all life. Saddle up, and join the definitive next-generation survival experience with ARK 2!</p>
+                <!-- <img class="slide-show-img" src="images/hero2.jpg" alt="Rex with Saddle">
+                '<img class="slide-show-img" src="images/dino1.jpg" alt="Raptors">
+                '<img class="slide-show-img" src="images/dino2.jpg" alt="Dodo"> -->
+                
             </div>
 
             <div id="spotlight">
-                <h3>Spotlight from News </h3>
+                <h2>Spotlight from News </h2>
                 <img class="spotlight-img" src="images/dino3.jfif" alt="Stego">
                 <p>Stegosaurus regium has approximately 16 paired rows of plates along its back, flanked by another, smaller pair of 6 plates. This is contrary to the alternating rows on Stegosaurus fossils I've seen in museums. Not surprisingly, Stegosaurus uses the spines on its tail to defend itself. While not aggressive, Stegosaurus will come to the aid of another nearby Stegosaurus. This implies it to be a herd animal. </p>
-                <button>Learn more</button>
-
+                <form action = "dino.html">
+                  <button class="home-btn">Learn More</button>
+               </form>
             </div>
 
             <div id="countdown">
                 <h2>Release Date</h2>
-                <p >Days left</p>
-                <button>Count down</button>
+                <img class="countdown-img" src="images/countdown.jpg" alt="Countdown logo">
+                <p>At this point in time, there is no definitive Ark 2 release date. Though the sequel to Ark was originally set to arrive in 2022, it has since been pushed back to 2023. This release window was confirmed in the Xbox and Bethesda Games Showcase 2022 cinematic trailer. However, the current release date is unknown but should be coming soon.</p>
+                <form action = "buy.html">
+                  <button class="home-btn">Pre-order Here</button>
+               </form>
             </div>
 
         </main>
         <footer>
             <p>Ark 2 &copy; 2023 - Brendan Rauch</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="site-plan.html"  target="_blank">Site Plan</a></p>
             <p><a href="contactus.html">Contact Us</a></p>
         </footer>
-    </div>               
+    </div> 
+    
+    
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
 </body>
 </html>
